@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +15,43 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker-off-2" translatesAutoresizingMaskIntoConstraints="NO" id="3hU-MQ-0Rj">
+                                <rect key="frame" x="84" y="80" width="152" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3hU-MQ-0Rj" secondAttribute="height" multiplier="152:157" id="cqp-kC-5g3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY RESTAURANTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-dF-Qe2">
+                                <rect key="frame" x="36" y="347" width="249" height="33"/>
+                                <color key="backgroundColor" red="0.90683327150000004" green="0.93157313659999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" red="0.13439964536506011" green="0.15821133584717992" blue="0.52157451923076914" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90683327150000004" green="0.93157313659999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Iw-dF-Qe2" secondAttribute="trailing" constant="35" id="ES9-yq-vnL"/>
+                            <constraint firstItem="8Iw-dF-Qe2" firstAttribute="top" secondItem="3hU-MQ-0Rj" secondAttribute="bottom" constant="110" id="IxP-FP-DHg"/>
+                            <constraint firstItem="3hU-MQ-0Rj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="Izu-ys-8P8"/>
+                            <constraint firstAttribute="trailing" secondItem="3hU-MQ-0Rj" secondAttribute="trailing" constant="84" id="Kqe-CG-EWZ"/>
+                            <constraint firstItem="3hU-MQ-0Rj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZAb-RW-nIf"/>
+                            <constraint firstItem="8Iw-dF-Qe2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mLF-cP-gIZ"/>
+                            <constraint firstItem="8Iw-dF-Qe2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="36" id="zKW-fc-4n2"/>
+                            <constraint firstItem="3hU-MQ-0Rj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="84" id="zs6-R2-BFP"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="speaker-off-2" width="512" height="512"/>
+    </resources>
 </document>

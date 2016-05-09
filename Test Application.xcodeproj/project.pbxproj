@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		FB9CBE721CDA308E0016C007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE711CDA308E0016C007 /* AppDelegate.swift */; };
-		FB9CBE741CDA308E0016C007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE731CDA308E0016C007 /* ViewController.swift */; };
+		FB9CBE741CDA308E0016C007 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE731CDA308E0016C007 /* LoginScreen.swift */; };
 		FB9CBE771CDA308E0016C007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9CBE751CDA308E0016C007 /* Main.storyboard */; };
 		FB9CBE7A1CDA308E0016C007 /* Test_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE781CDA308E0016C007 /* Test_Application.xcdatamodeld */; };
 		FB9CBE7C1CDA308E0016C007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9CBE7B1CDA308E0016C007 /* Assets.xcassets */; };
 		FB9CBE7F1CDA308E0016C007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9CBE7D1CDA308E0016C007 /* LaunchScreen.storyboard */; };
+		FB9CBE881CDA33210016C007 /* speaker-off.png in Resources */ = {isa = PBXBuildFile; fileRef = FB9CBE871CDA33210016C007 /* speaker-off.png */; };
+		FB9CBE8C1CDCA33E0016C007 /* Main table screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE8B1CDCA33E0016C007 /* Main table screen.swift */; };
+		FB9CBE8E1CDCA7C10016C007 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE8D1CDCA7C10016C007 /* MyCell.swift */; };
+		FB9CBE901CDD36BF0016C007 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE8F1CDD36BE0016C007 /* ImageLoader.swift */; };
+		FB9CBE9C1CDD65780016C007 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBE9A1CDD65780016C007 /* Restaurant.swift */; };
+		FB9CBE9E1CE0B9670016C007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9CBE9D1CE0B9670016C007 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB9CBE6E1CDA308E0016C007 /* Test Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9CBE711CDA308E0016C007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB9CBE731CDA308E0016C007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB9CBE731CDA308E0016C007 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		FB9CBE761CDA308E0016C007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB9CBE791CDA308E0016C007 /* Test_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_Application.xcdatamodel; sourceTree = "<group>"; };
 		FB9CBE7B1CDA308E0016C007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB9CBE7E1CDA308E0016C007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB9CBE801CDA308E0016C007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9CBE871CDA33210016C007 /* speaker-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speaker-off.png"; sourceTree = "<group>"; };
+		FB9CBE8B1CDCA33E0016C007 /* Main table screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Main table screen.swift"; sourceTree = "<group>"; };
+		FB9CBE8D1CDCA7C10016C007 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		FB9CBE8F1CDD36BE0016C007 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FB9CBE9A1CDD65780016C007 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FB9CBE9D1CE0B9670016C007 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,29 @@
 		FB9CBE701CDA308E0016C007 /* Test Application */ = {
 			isa = PBXGroup;
 			children = (
+				FB9CBE861CDA33040016C007 /* Icons */,
 				FB9CBE711CDA308E0016C007 /* AppDelegate.swift */,
-				FB9CBE731CDA308E0016C007 /* ViewController.swift */,
+				FB9CBE731CDA308E0016C007 /* LoginScreen.swift */,
+				FB9CBE8B1CDCA33E0016C007 /* Main table screen.swift */,
+				FB9CBE8D1CDCA7C10016C007 /* MyCell.swift */,
+				FB9CBE8F1CDD36BE0016C007 /* ImageLoader.swift */,
+				FB9CBE9A1CDD65780016C007 /* Restaurant.swift */,
 				FB9CBE751CDA308E0016C007 /* Main.storyboard */,
 				FB9CBE7B1CDA308E0016C007 /* Assets.xcassets */,
 				FB9CBE7D1CDA308E0016C007 /* LaunchScreen.storyboard */,
 				FB9CBE801CDA308E0016C007 /* Info.plist */,
 				FB9CBE781CDA308E0016C007 /* Test_Application.xcdatamodeld */,
+				FB9CBE9D1CE0B9670016C007 /* Images.xcassets */,
 			);
 			path = "Test Application";
+			sourceTree = "<group>";
+		};
+		FB9CBE861CDA33040016C007 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FB9CBE871CDA33210016C007 /* speaker-off.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9CBE7F1CDA308E0016C007 /* LaunchScreen.storyboard in Resources */,
+				FB9CBE9E1CE0B9670016C007 /* Images.xcassets in Resources */,
+				FB9CBE881CDA33210016C007 /* speaker-off.png in Resources */,
 				FB9CBE7C1CDA308E0016C007 /* Assets.xcassets in Resources */,
 				FB9CBE771CDA308E0016C007 /* Main.storyboard in Resources */,
 			);
@@ -139,9 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9CBE9C1CDD65780016C007 /* Restaurant.swift in Sources */,
 				FB9CBE7A1CDA308E0016C007 /* Test_Application.xcdatamodeld in Sources */,
-				FB9CBE741CDA308E0016C007 /* ViewController.swift in Sources */,
+				FB9CBE8E1CDCA7C10016C007 /* MyCell.swift in Sources */,
+				FB9CBE901CDD36BF0016C007 /* ImageLoader.swift in Sources */,
+				FB9CBE741CDA308E0016C007 /* LoginScreen.swift in Sources */,
 				FB9CBE721CDA308E0016C007 /* AppDelegate.swift in Sources */,
+				FB9CBE8C1CDCA33E0016C007 /* Main table screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +325,7 @@
 				FB9CBE851CDA308E0016C007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
